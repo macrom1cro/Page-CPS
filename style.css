@@ -1,0 +1,213 @@
+:root {
+  --paleBackground: #ffffff;
+  --white: #f8f8f8;
+  --whiteButton: #eaeaea;
+  --grey: #7e7e82;
+  --black: #1b1c21;
+  --lightTurquoise: #b8ffec;
+  --turquoise: #41f6d7;
+}
+@font-face {
+  font-family: "TT Lakes";
+  src: url('/fonts/TTLakes-Bold.woff') format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "TT Lakes";
+  src: url('/fonts/TTLakes-Light.woff') format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "TT Lakes";
+  src: url('/fonts/TTLakes-Medium.woff') format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "TT Lakes";
+  src: url('/fonts/TTLakes-Regular.woff') format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--white);
+  min-height: 100vh;
+  width: 320px;
+  height: 597px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "TT Lakes";
+}
+
+.text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.2px;
+  color: var(--black);
+}
+.header {
+  width: 320px;
+  height: 88px;
+  background: var(--paleBackground);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.header__button {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 20px;
+  background-size: cover;
+  cursor: pointer;
+}
+.button__burger {
+  background-image: url('/blocks/header/button/burger.png');
+}
+.button__repair {
+  background-image: url('/blocks/header/button/repair.png');
+}
+.button__checkstatus {
+  background-image: url('/blocks/header/button/checkstatus.png');
+}
+.header__divider {
+  width: 2px;
+  height: 32px;
+  border-radius: 1px;
+  background-color: var(--whiteButton);
+}
+.header__logo {
+  width: 96px;
+  height: 50px;
+  background-size: cover;
+  background-image: url('/blocks/header/logo/logo.png');
+}
+.main {
+  width: 320px;
+  height: 509px;
+  display: flex;
+  flex-direction: column;
+}
+.title {
+  width: 304px;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-top: 24px;
+}
+.title__highlight {
+  width: 4px;
+  height: 40px;
+  /* margin: 0 10px; */
+  border-radius: 0px 4px 4px 0px;
+  background-color: var(--turquoise);
+}
+.title__text {
+  width: 288px;
+  height: 40px;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 40px;
+  letter-spacing: -0.6px;
+  margin: 0 16px;
+}
+.slide-menu {
+  width: 504px;
+  height: 40px;
+  /* top: 176px;
+  left: 16px; */
+  margin-top: 24px;
+  margin-left: 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.slide-menu__button {
+  width: 246px;
+  height: 40px;
+  background-color: var(--paleBackground);
+  border-radius: 6px;
+  border: 2px solid var(--lightTurquoise);
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: -0.2px;
+  color: var(--grey);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main__about {
+  width: 320px;
+  height: 322px;
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+}
+.about__text {
+  width: 288px;
+  height: 90px;
+  margin: 0 16px;
+  display: flex;
+  color: var(--black);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.2px;
+}
+.about__read-more {
+  width: 132px;
+  height: 24px;
+  margin-top: 16px;
+  margin-left: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  color: var(--black);
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.read-more__expand {
+  width: 24px;
+  height: 24px;
+  background-image: url('../blocks/main/about/expand/expand.png');
+  background-size: cover;
+}
+.read-more__text {
+  width: 100px;
+  height: 24px;
+  margin-left: 8px;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: -0.2px;
+}
+
+/* .read-more:hover {
+  background-color: #0062cc;
+} */
+.about__image {
+  width: 320px;
+  height: 176px;
+  margin-top: 16px;
+  border: 2px solid var(--paleBackground) F;
+  background-size: cover;
+  background-image: url('../blocks/main/about/image/image.png');
+}
