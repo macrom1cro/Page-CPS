@@ -1,9 +1,9 @@
 document.querySelectorAll(".about__read-more").forEach(btn => {
   btn.addEventListener("click", e => {
-    const textBlock = e.target.previousElementSibling;
-    textBlock.classList.toggle("active");
-    // btn.textContent = textBlock.classList.contains("active")
-    //   ? "Свернуть ▲"
-    //   : "Читать далее ▼";
+    btn.lastElementChild.textContent = e.target.previousElementSibling.classList
+    .toggle("active")
+    ? "Свернуть"
+    : "Читать далее";
+    e.target.parentElement.previousElementSibling.classList.toggle("active");
   });
 });
