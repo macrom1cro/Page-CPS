@@ -9,25 +9,25 @@
 }
 @font-face {
   font-family: "TT Lakes";
-  src: url('fonts/TTLakes-Bold.woff') format("woff");
+  src: url('./fonts/TTLakes-Bold.woff') format("woff");
   font-weight: bold;
   font-style: normal;
 }
 @font-face {
   font-family: "TT Lakes";
-  src: url('fonts/TTLakes-Light.woff') format("woff");
+  src: url('./fonts/TTLakes-Light.woff') format("woff");
   font-weight: 300;
   font-style: normal;
 }
 @font-face {
   font-family: "TT Lakes";
-  src: url('fonts/TTLakes-Medium.woff') format("woff");
+  src: url('./fonts/TTLakes-Medium.woff') format("woff");
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
   font-family: "TT Lakes";
-  src: url('fonts/TTLakes-Regular.woff') format("woff");
+  src: url('./fonts/TTLakes-Regular.woff') format("woff");
   font-weight: 400;
   font-style: normal;
 }
@@ -74,13 +74,13 @@ body {
   cursor: pointer;
 }
 .button__burger {
-  background-image: url('blocks/header/button/burger.png');
+  background-image: url('./blocks/header/button/burger.png');
 }
 .button__repair {
-  background-image: url('blocks/header/button/repair.png');
+  background-image: url('./blocks/header/button/repair.png');
 }
 .button__checkstatus {
-  background-image: url('blocks/header/button/checkstatus.png');
+  background-image: url('./blocks/header/button/checkstatus.png');
 }
 .header__divider {
   width: 2px;
@@ -92,7 +92,7 @@ body {
   width: 96px;
   height: 50px;
   background-size: cover;
-  background-image: url('blocks/header/logo/logo.png');
+  background-image: url('./blocks/header/logo/logo.png');
 }
 .main {
   width: 320px;
@@ -188,7 +188,7 @@ body {
 .read-more__expand {
   width: 24px;
   height: 24px;
-  background-image: url('blocks/main/about/expand/expand.png');
+  background-image: url('./blocks/main/about/expand/expand.png');
   background-size: cover;
 }
 .read-more__text {
@@ -209,5 +209,5 @@ body {
   margin-top: 16px;
   border: 2px solid var(--paleBackground) F;
   background-size: cover;
-  background-image: url('blocks/main/about/image/image.png');
+  background-image: url('./blocks/main/about/image/image.png');
 }
