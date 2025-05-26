@@ -73,9 +73,15 @@ body {
   padding: 0 16px;
   transition: min-width 1s ease-out;
 }
-
+.header__conteiner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+  gap: 20px;
+}
 .header__conteiner-left {
-  min-width: 172px;
+  width: 172px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -87,7 +93,7 @@ body {
 }
 
 .header__conteiner-right {
-  min-width: 96px;
+  width: 96px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -268,9 +274,9 @@ body {
   .button__profile {
     background-image: url("./blocks/header/button/profile.svg");
   }
+
   .header__conteiner-middle {
-    min-width: 194px;
-    padding-right: 20px;
+    width: 194px;
     display: flex;
     flex-direction: row;
     align-items: center;
